@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -186,8 +187,8 @@ namespace ET
         }
 
         #endregion
-        
-  #region UI按钮事件
+
+        #region UI按钮事件
 
       public static void AddListenerAsyncWithId(this Button button, Func<int, ETTask> action,int id)
       { 
@@ -238,7 +239,7 @@ namespace ET
               {
                   return;
               }
-                   
+
               clickActionAsync().Coroutine();
           });
       }
